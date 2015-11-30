@@ -1,7 +1,202 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<title>Steven Woodrum : portfolio</title>
+
+	<style>
+
+	@font-face {
+		font-family: vineta;
+		src: url(vinet.ttf);
+	}
+
+	#header {
+		font-family: vineta;
+		text-align: center;
+		width: 100%
+	}
+
+	div.relative {
+    		position: relative;
+    		width: 100%;
+    		height: 84px;
+    		/* border: 3px solid #73AD21; */
+		margin: auto;
+	} 
+
+	div.absolute {
+    		position: absolute;
+    		top: 0px;
+    		right: 50%;
+    		width: 0px;
+    		height: 84px;
+    		/* border: 3px solid #73ADE1; */
+	}
+
+	#nav {
+		width: 100%;
+	}
+
+	#nav ul {
+		font-family: arial;
+		font-size: 26px;
+		list-style-type: none;
+		text-align: center;
+	}
+
+	#nav li {
+		display: inline;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#about {
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	#about p {
+		border: 3px solid #73ADE1;
+		
+	}
+
+	p {
+		font-family: arial;
+	}
+
+	#projects {
+		margin-top: 200px;
+		margin-left: 25%;
+		width: 50%;
+		border: 3px solid #73ADE1;
+	}
+
+	#projects table {
+		width: 100%;
+	}
+	#projects table, th, td {
+		text-align: center;
+		border: 1px solid black;
+    		border-collapse: collapse;
+	}
+	#projects th, td {
+		width: 50%;
+		height: 200px;
+	}
+
+	#contact {
+		margin-left: 25%;
+		width: 50%;
+		border: 3px solid #73ADE1;
+	}
+
+	</style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<p style="font-size: 40px">[NOTE]: Site under construction, stay tuned.
+
+<div id="header">
+<h1>
+<span style="font-size: 150px">TAKING<br>CHARGE</span><br>
+<span style="font-size: 40px">AND DOING THINGS WITH IT</span>
+</h1>
+</div>
+
+<!-- LIGHTNING BOLT STUFF -->
+<div class="relative">
+  <div class="absolute">
+	<div style="position: relative; left: -450px; width: 900px; top: 32px; height: 20px; background-color: black"></div>
+	<img src="bolt.png" style="position: relative; left: -42px; top: -21px; width: 84px; height: 84px">
+  </div>
+</div>
+
+
+<!-- NAVIGATION -->
+<div id="nav">
+<ul>
+	<li><a href="#about">about</a></li>
+	<li><a href="#projects">projects</a></li>
+	<li><a href="#contact">contact</a></li>
+</ul>
+</div>
+
+
+<!-- ABOUT -->
+<div id="about">
+<p style="font-size: 22px">
+	<img src="Me.jpg" style="float: left; width:300px; height:400px">
+	Hi! I'm <span style="font-weight:bold">Steven Woodrum</span>,<br>
+	an enterprising <span style="font-weight:bold">computer engineer</span><br>
+	in my third year at the <span style="font-weight:bold">University of Virginia</span>.
+	<br><br>
+<span style="font-size: 18px">
+	With a strong background in software development, circuit analysis,
+	 and burgeoning experience in electromechanical systems, I seek challenges that necessitate
+	 out-of-the-box thinking and multidisciplinary expertise.
+</span>
+</p>
+
+<p style="font-size: 18px; margin-top: 230px">
+	<img src="Clients.jpg" style="float: left; width:300px; height:400px">
+	I jokingly call myself a professional charge manipulator.
+	  Whether spinning a motor, scripting a webpage, or shorting a battery,
+	 I'm ultimately controlling the flow of electrons to do something useful.
+	  Plus, it's fun to tell people my life revolves around particles I can't see.
+</p>
+
+<p style="font-size: 18px">
+	Humanity's greatest challenges can't be solved with a 9-Volt
+	 and some duct tape.  I've embraced this fact by purchasing more duct tape, and by adopting a high-level systems approach to problem solving.
+	  The UVa <a href="http://www.seas.virginia.edu/acad/programs/tlp/" target="_blank">Technology Leaders Program</a> has enabled me to develop design thinking
+	 practices in a multidisciplinary context not commonly seen in engineering degree curricula.
+</p>
+</div>
+
+
+<!-- PROJECTS -->
+<div id="projects">
+<p style="font-size: 26px">Projects</p>
+<p style="font-size: 18px">All projects + details: <a href="">Click here</a></p>
+
+<p style="font-size: 18px">Current (fall 2015)</p>
+<table>
+	<tr>
+		<td>Bi-copter</td>
+		<td>Picture</td>
+	</tr>
+	<tr>
+		<td>Picture</td>
+		<td>Music visualizer PCB</td>
+	</tr>
+</table>
+
+<p style="font-size: 18px">Featured</p>
+<table>
+	<tr>
+		<td>Artifically Intelligent<br>Board Game Player</td>
+		<td>Picture</td>
+	</tr>
+	<tr>
+		<td>Picture</td>
+		<td>Automated Delivery Robot</td>
+	</tr>
+	<tr>
+		<td>Humanoid Endoskeleton research</td>
+		<td>Picture</td>
+	</tr>
+</table>
+</div>
+
+
+<!-- CONTACT -->
+<div id="contact">
+<p style="font-size: 26px">Contact</p>
+<p style="font-size: 18px">Actively seeking opportunities for summer 2016.  Resume available on request.<br>
+Email me, or continue to stalk me at the following locations:</p>
+</div>
+
 </body>
 </html>
