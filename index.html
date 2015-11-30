@@ -52,8 +52,10 @@
 	}
 
 	#about {
-		width: 50%;
-		margin-left: 25%;
+		/* Min-max approach seems to work well for responsive design */
+		min-width: 800px;
+		max-width: 50%;
+		margin: auto;
 	}
 
 	#about p {
@@ -66,9 +68,10 @@
 	}
 
 	#projects {
-		margin-top: 200px;
-		margin-left: 25%;
-		width: 50%;
+		margin: auto;
+		margin-top: 50px;
+		min-width: 800px;
+		max-width: 50%;
 		border: 3px solid #73ADE1;
 	}
 
@@ -86,17 +89,32 @@
 	}
 
 	#contact {
-		margin-left: 25%;
-		width: 50%;
+		margin: auto;
+		margin-top: 50px;
+		min-width: 800px;
+		max-width: 50%;
 		border: 3px solid #73ADE1;
+	}
+	#contact p {
+		padding-left: 10px;
+	}
+	#contact ul {
+		font-family: arial;
+		font-size: 11px;
+		list-style-type: none;
+		text-align: center;
+	}
+
+	#contact li {
+		display: inline;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 	</style>
 </head>
 
 <body>
-
-<p style="font-size: 40px">[NOTE]: Site under construction, stay tuned.
 
 <div id="header">
 <h1>
@@ -109,7 +127,7 @@
 <div class="relative">
   <div class="absolute">
 	<div style="position: relative; left: -450px; width: 900px; top: 32px; height: 20px; background-color: black"></div>
-	<img src="bolt.png" style="position: relative; left: -42px; top: -21px; width: 84px; height: 84px">
+	<img src="bolt.jpg" style="position: relative; left: -42px; top: -21px; width: 84px; height: 84px">
   </div>
 </div>
 
@@ -126,8 +144,8 @@
 
 <!-- ABOUT -->
 <div id="about">
-<p style="font-size: 22px">
-	<img src="Me.jpg" style="float: left; width:300px; height:400px">
+<p style="font-size: 22px; height: 294px">
+	<img src="Me.jpg" style="float: left; width:300px; height:294px; padding-right: 10px">
 	Hi! I'm <span style="font-weight:bold">Steven Woodrum</span>,<br>
 	an enterprising <span style="font-weight:bold">computer engineer</span><br>
 	in my third year at the <span style="font-weight:bold">University of Virginia</span>.
@@ -139,15 +157,15 @@
 </span>
 </p>
 
-<p style="font-size: 18px; margin-top: 230px">
-	<img src="Clients.jpg" style="float: left; width:300px; height:400px">
+<p style="font-size: 18px; margin-top: 30px; padding-left: 10px">
 	I jokingly call myself a professional charge manipulator.
 	  Whether spinning a motor, scripting a webpage, or shorting a battery,
 	 I'm ultimately controlling the flow of electrons to do something useful.
 	  Plus, it's fun to tell people my life revolves around particles I can't see.
 </p>
 
-<p style="font-size: 18px">
+<p style="font-size: 18px; height: 400px; margin-top: 30px">
+	<img src="Clients.jpg" title="Photo credit: TODO" style="float: left; width:300px; height:400px; padding-right: 10px">
 	Humanity's greatest challenges can't be solved with a 9-Volt
 	 and some duct tape.  I've embraced this fact by purchasing more duct tape, and by adopting a high-level systems approach to problem solving.
 	  The UVa <a href="http://www.seas.virginia.edu/acad/programs/tlp/" target="_blank">Technology Leaders Program</a> has enabled me to develop design thinking
@@ -159,9 +177,9 @@
 <!-- PROJECTS -->
 <div id="projects">
 <p style="font-size: 26px">Projects</p>
-<p style="font-size: 18px">All projects + details: <a href="">Click here</a></p>
+<p style="font-size: 18px">All projects + details: <a href="https://github.com/stevenwoodrum?tab=repositories">Click here</a></p>
 
-<p style="font-size: 18px">Current (fall 2015)</p>
+<p style="font-size: 18px">Current</p>
 <table>
 	<tr>
 		<td>Bi-copter</td>
@@ -196,6 +214,13 @@
 <p style="font-size: 26px">Contact</p>
 <p style="font-size: 18px">Actively seeking opportunities for summer 2016.  Resume available on request.<br>
 Email me, or continue to stalk me at the following locations:</p>
+
+<ul>
+	<li><a href="">Email</a></li>
+	<li><a href="http://www.linkedin.com/in/stevenwoodrum" target="_blank">LinkedIn</a></li>
+	<li><a href="">GitHub</a></li>
+</ul>
+
 </div>
 
 </body>
