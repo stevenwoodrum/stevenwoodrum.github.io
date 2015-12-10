@@ -6,9 +6,13 @@
 
 	<style>
 
-	body {
-		/*background-color: #ADD8E6;*/
+	body, #header, #lightning {
+		background-color: #ADD8E6;
 		/*background-color: #D0D0F0;*/
+	}
+
+	div {
+		background-color: #FFFFFF;
 	}
 
 	a {
@@ -23,12 +27,13 @@
 	#header {
 		font-family: vineta;
 		text-align: center;
-		width: 100%
+		width: 100%;
+		margin: auto;
 	}
 
 	div.relative {
     		position: relative;
-    		width: 100%;
+    		width: 0px;
     		height: 84px;
     		/* border: 3px solid #73AD21; */
 		margin: auto;
@@ -43,22 +48,36 @@
     		/* border: 3px solid #73ADE1; */
 	}
 
-	#nav {
-		width: 100%;
-	}
-
-	#nav ul {
-		font-family: arial;
-		font-size: 26px;
-		list-style-type: none;
+	#lightning {
 		text-align: center;
 	}
 
-	#nav li {
-		display: inline;
-		margin-left: 5%;
-		margin-right: 5%;
+	#nav {
+		margin: auto;
+		/*width: 50%;*/
+		min-width: 800px;
+		max-width: 50%;
+		text-align: center;
 	}
+
+	#nav ul {
+		padding: 0px;
+		font-family: arial;
+		font-size: 26px;
+		list-style: none;
+		border: 3px solid #E3E3E3;
+	}
+
+	#nav li {
+		/*border: 3px solid #000000;*/
+		display: inline-block;
+		width: 150px;
+	}
+
+	#nav li a {
+		padding: 5px 20px;
+	}
+
 
 	#about {
 		/* Min-max approach seems to work well for responsive design */
@@ -83,7 +102,8 @@
 		margin-top: 50px;
 		min-width: 800px;
 		max-width: 50%;
-		/*border: 3px solid #73ADE1;*/
+		padding: 10px;
+		border: 3px solid #73ADE1;
 	}
 
 	#projects ul {
@@ -164,11 +184,17 @@
 </div>
 
 <!-- LIGHTNING BOLT STUFF -->
+<!--
 <div class="relative">
   <div class="absolute">
 	<div style="position: relative; left: -450px; width: 900px; top: 32px; height: 20px; background-color: black"></div>
-	<img src="Bolt.jpg" style="position: relative; left: -42px; top: -21px; width: 84px; height: 84px">
+	<img src="bolt-transparent.png" style="position: relative; left: -42px; top: -21px; width: 84px; height: 84px">
   </div>
+</div>
+-->
+
+<div id="lightning">
+	<img src="bolt-transparent.png" style="width: 84px; height: 84px">
 </div>
 
 
@@ -197,7 +223,7 @@
 </span>
 </p>
 
-<p style="font-size: 18px; margin-top: 30px">
+<p style="font-size: 18px; height: 70px; margin-top: 30px">
 	I jokingly call myself a professional charge manipulator.
 	  Whether spinning a motor, filtering a signal, or shorting a battery,
 	 I'm ultimately controlling the flow of electrons to do something useful.
@@ -236,8 +262,10 @@
 </div>
 
 <div class="card">
+	<a href="http://github.com/stevenwoodrum/Humanoid_Endoskeleton_Research">
 	<img src="hros1-from-trossen.jpg" title="Source: Trossen Robotics (http://www.trossenrobotics.com/HR-OS1)">
 	<p>HUMANOID ENDOSKELETON RESEARCH</p>
+	</a>
 </div>
 
 </div>
