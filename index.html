@@ -6,6 +6,15 @@
 
 	<style>
 
+	body {
+		/*background-color: #ADD8E6;*/
+		/*background-color: #D0D0F0;*/
+	}
+
+	a {
+		text-decoration: none;
+	}
+
 	@font-face {
 		font-family: vineta;
 		src: url(vinet.ttf);
@@ -56,10 +65,12 @@
 		min-width: 800px;
 		max-width: 50%;
 		margin: auto;
+		border: 3px solid #73ADE1;
+		padding: 10px;
 	}
 
-	#about p {
-		border: 3px solid #73ADE1;
+	#about img {
+		
 		
 	}
 
@@ -72,21 +83,42 @@
 		margin-top: 50px;
 		min-width: 800px;
 		max-width: 50%;
-		border: 3px solid #73ADE1;
+		/*border: 3px solid #73ADE1;*/
 	}
 
-	#projects table {
-		width: 100%;
+	#projects ul {
+		font-family: arial;
 	}
-	#projects table, th, td {
+
+	div.card {
+		position: relative;
+		/*border: 1px solid #ccc;*/
 		text-align: center;
-		border: 1px solid black;
-    		border-collapse: collapse;
+		width: 100%;
+		background-color: #222222;
+		margin-bottom: 10px;
+		padding-top: 10px;
 	}
-	#projects th, td {
-		width: 50%;
-		height: 200px;
+
+	div.card img {
+		max-width: 100%;
+		max-height: 400px;
 	}
+
+	div.card p {
+		position: absolute;
+		bottom: -30px;
+		background-color: rgba(90, 90, 90, 0.7);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #ffffff;
+		font-weight: bold;
+		width: 100%;
+		text-indent: 50px;
+		text-align: left;
+		font-size: 30px;
+	}
+
 
 	#contact {
 		margin: auto;
@@ -94,21 +126,29 @@
 		min-width: 800px;
 		max-width: 50%;
 		border: 3px solid #73ADE1;
+		padding: 10px;
 	}
+
 	#contact p {
 		padding-left: 10px;
 	}
-	#contact ul {
-		font-family: arial;
-		font-size: 11px;
-		list-style-type: none;
-		text-align: center;
+
+	div.img {
+		display: inline-block;
+		padding-left: 30px;
+		padding-right: 30px;
+		/*border: 1px solid #ccc;*/
 	}
 
-	#contact li {
-		display: inline;
-		margin-left: 5%;
-		margin-right: 5%;
+	div.img img {
+		width: 100px;
+		height: 100px;
+		padding: 5px;
+	}
+
+	div.desc {
+		font-family: arial;
+		/*border: 3px solid #000000;*/
 	}
 
 	</style>
@@ -157,9 +197,9 @@
 </span>
 </p>
 
-<p style="font-size: 18px; margin-top: 30px; padding-left: 10px">
+<p style="font-size: 18px; margin-top: 30px">
 	I jokingly call myself a professional charge manipulator.
-	  Whether spinning a motor, scripting a webpage, or shorting a battery,
+	  Whether spinning a motor, filtering a signal, or shorting a battery,
 	 I'm ultimately controlling the flow of electrons to do something useful.
 	  Plus, it's fun to tell people my life revolves around particles I can't see.
 </p>
@@ -167,7 +207,7 @@
 <p style="font-size: 18px; height: 400px; margin-top: 30px">
 	<img src="Clients.jpg" title="Photo credit: TODO" style="float: left; width:300px; height:400px; padding-right: 10px">
 	Humanity's greatest challenges can't be solved with a 9-Volt
-	 and some duct tape.  I've embraced this fact by purchasing more duct tape, and by adopting a high-level systems approach to problem solving.
+	 and some duct tape.  I've embraced this fact by adopting a high-level systems approach to problem solving.
 	  The UVa <a href="http://www.seas.virginia.edu/acad/programs/tlp/" target="_blank">Technology Leaders Program</a> has enabled me to develop design thinking
 	 practices in a multidisciplinary context not commonly seen in engineering degree curricula.
 </p>
@@ -176,50 +216,64 @@
 
 <!-- PROJECTS -->
 <div id="projects">
-<p style="font-size: 26px">Projects</p>
-<p style="font-size: 18px">All projects + details: <a href="https://github.com/stevenwoodrum?tab=repositories">Click here</a></p>
+<p style="font-size: 26px">PROJECTS</p>
 
-<p style="font-size: 18px">Current</p>
-<table>
-	<tr>
-		<td>Bi-copter</td>
-		<td>Picture</td>
-	</tr>
-	<tr>
-		<td>Picture</td>
-		<td>Music visualizer PCB</td>
-	</tr>
-</table>
+<p style="font-size: 18px">All projects + details: <a href="http://github.com/stevenwoodrum?tab=repositories">Click here</a></p>
 
-<p style="font-size: 18px">Featured</p>
-<table>
-	<tr>
-		<td>Artifically Intelligent<br>Board Game Player</td>
-		<td>Picture</td>
-	</tr>
-	<tr>
-		<td>Picture</td>
-		<td>Automated Delivery Robot</td>
-	</tr>
-	<tr>
-		<td>Humanoid Endoskeleton research</td>
-		<td>Picture</td>
-	</tr>
-</table>
+<p style="font-size: 18px">Current projects (Fall 2015):</p>
+<ul>
+	<li>Bi-copter</li>
+	<li>Music visualizer</li>
+</ul>
+
+<p style="font-size: 18px">Featured:</p>
+
+<div class="card">
+	<a href="http://github.com/stevenwoodrum/Automated_Delivery_Robot">
+	<img src="line-following-robot.jpeg">
+	<p>AUTOMATED DELIVERY ROBOT</p>
+	</a>
+</div>
+
+<div class="card">
+	<img src="hros1-from-trossen.jpg" title="Source: Trossen Robotics (http://www.trossenrobotics.com/HR-OS1)">
+	<p>HUMANOID ENDOSKELETON RESEARCH</p>
+</div>
+
 </div>
 
 
 <!-- CONTACT -->
 <div id="contact">
-<p style="font-size: 26px">Contact</p>
+<p style="font-size: 26px">CONTACT</p>
 <p style="font-size: 18px">Actively seeking opportunities for summer 2016.  Resume available on request.<br>
 Email me, or continue to stalk me at the following locations:</p>
 
-<ul>
-	<li><a href="">Email</a></li>
-	<li><a href="http://www.linkedin.com/in/stevenwoodrum" target="_blank">LinkedIn</a></li>
-	<li><a href="">GitHub</a></li>
-</ul>
+<div style="width: 100%; text-align: center">
+
+<div class="img">
+	<SCRIPT type='text/javascript'>a='sdw7ng'; b='virginia.edu'
+		document.write('<A hre'+'f="mai'+'lto:'+a+'@'+b+'">');
+		document.write('<img src="mail-icon-iconmonstr-no-attr.png">'+'<div class="desc">'+a+'@'+b+'</div>'+'</a>');
+	</SCRIPT>
+</div>
+
+
+<div class="img">
+	<a href="http://www.linkedin.com/in/stevenwoodrum" target="_blank">
+	<img src="In-Black-128px-TM.png">
+	<div class="desc">LinkedIn</div>
+	</a>
+</div>
+
+<div class="img">
+	<a href="http://github.com/stevenwoodrum">
+	<img src="GitHub-Mark-120px-plus.png">
+	<div class="desc">GitHub</div>
+	</a>
+</div>
+
+</div>
 
 </div>
 
