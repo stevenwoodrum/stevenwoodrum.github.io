@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Steven Woodrum : portfolio</title>
+
+	<style>
+
+	body, #header, #lightning {
+		background-color: #ADD8E6;
+		/*background-color: #D0D0F0;*/
+	}
+
+	div {
+		background-color: #FFFFFF;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	@font-face {
+		font-family: vineta;
+		src: url(vinet.ttf);
+	}
+
+	#header {
+		font-family: vineta;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+
+	div.relative {
+    		position: relative;
+    		width: 0px;
+    		height: 84px;
+    		/* border: 3px solid #73AD21; */
+		margin: auto;
+	} 
+
+	div.absolute {
+    		position: absolute;
+    		top: 0px;
+    		right: 50%;
+    		width: 0px;
+    		height: 84px;
+    		/* border: 3px solid #73ADE1; */
+	}
+
+	#lightning {
+		text-align: center;
+	}
+
+	#nav {
+		margin: auto;
+		/*width: 50%;*/
+		min-width: 800px;
+		max-width: 50%;
+		text-align: center;
+	}
+
+	#nav ul {
+		padding: 0px;
+		font-family: arial;
+		font-size: 26px;
+		list-style: none;
+		border: 3px solid #E3E3E3;
+	}
+
+	#nav li {
+		/*border: 3px solid #000000;*/
+		display: inline-block;
+		width: 150px;
+	}
+
+	#nav li a {
+		padding: 5px 20px;
+	}
+
+
+	#about {
+		/* Min-max approach seems to work well for responsive design */
+		min-width: 800px;
+		max-width: 50%;
+		margin: auto;
+		border: 3px solid #73ADE1;
+		padding: 10px;
+	}
+
+	#about img {
+		
+		
+	}
+
+	p {
+		font-family: arial;
+	}
+
+	#projects {
+		margin: auto;
+		margin-top: 50px;
+		min-width: 800px;
+		max-width: 50%;
+		padding: 10px;
+		border: 3px solid #73ADE1;
+	}
+
+	#projects ul {
+		font-family: arial;
+	}
+
+	div.card {
+		position: relative;
+		/*border: 1px solid #ccc;*/
+		text-align: center;
+		width: 100%;
+		background-color: #222222;
+		margin-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	div.card img {
+		max-width: 100%;
+		max-height: 400px;
+	}
+
+	div.card p {
+		position: absolute;
+		bottom: -30px;
+		background-color: rgba(90, 90, 90, 0.7);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #ffffff;
+		font-weight: bold;
+		width: 100%;
+		text-indent: 50px;
+		text-align: left;
+		font-size: 30px;
+	}
+
+
+	#contact {
+		margin: auto;
+		margin-top: 50px;
+		min-width: 800px;
+		max-width: 50%;
+		border: 3px solid #73ADE1;
+		padding: 10px;
+	}
+
+	#contact p {
+		padding-left: 10px;
+	}
+
+	div.img {
+		display: inline-block;
+		padding-left: 30px;
+		padding-right: 30px;
+		/*border: 1px solid #ccc;*/
+	}
+
+	div.img img {
+		width: 100px;
+		height: 100px;
+		padding: 5px;
+	}
+
+	div.desc {
+		font-family: arial;
+		/*border: 3px solid #000000;*/
+	}
+
+	</style>
+</head>
+
+<body>
+
+<div id="header">
+<h1>
+<span style="font-size: 150px">TAKING<br>CHARGE</span><br>
+<span style="font-size: 40px">AND DOING THINGS WITH IT</span>
+</h1>
+</div>
+
+<!-- LIGHTNING BOLT STUFF -->
+<!--
+<div class="relative">
+  <div class="absolute">
+	<div style="position: relative; left: -450px; width: 900px; top: 32px; height: 20px; background-color: black"></div>
+	<img src="bolt-transparent.png" style="position: relative; left: -42px; top: -21px; width: 84px; height: 84px">
+  </div>
+</div>
+-->
+
+<div id="lightning">
+	<img src="bolt-transparent.png" style="width: 84px; height: 84px">
+</div>
+
+
+<!-- NAVIGATION -->
+<div id="nav">
+<ul>
+	<li><a href="#about">about</a></li>
+	<li><a href="#projects">projects</a></li>
+	<li><a href="#contact">contact</a></li>
+</ul>
+</div>
+
+
+<!-- ABOUT -->
+<div id="about">
+<p style="font-size: 22px; height: 294px">
+	<img src="Me.jpg" style="float: left; width:300px; height:294px; padding-right: 10px">
+	Hi! I'm <span style="font-weight:bold">Steven Woodrum</span>,<br>
+	an enterprising <span style="font-weight:bold">computer engineer</span><br>
+	in my third year at the <span style="font-weight:bold">University of Virginia</span>.
+	<br><br>
+<span style="font-size: 18px">
+	With a strong background in software development, circuit analysis,
+	 and burgeoning experience in electromechanical systems, I seek challenges that necessitate
+	 out-of-the-box thinking and multidisciplinary expertise.
+</span>
+</p>
+
+<p style="font-size: 18px; height: 70px; margin-top: 30px">
+	I jokingly call myself a professional charge manipulator.
+	  Whether spinning a motor, filtering a signal, or shorting a battery,
+	 I'm ultimately controlling the flow of electrons to do something useful.
+	  Plus, it's fun to tell people my life revolves around particles I can't see.
+</p>
+
+<p style="font-size: 18px; height: 400px; margin-top: 30px">
+	<img src="Clients.jpg" title="Photo credit: TODO" style="float: left; width:300px; height:400px; padding-right: 10px">
+	Humanity's greatest challenges can't be solved with a 9-Volt
+	 and some duct tape.  I've embraced this fact by adopting a high-level systems approach to problem solving.
+	  The UVa <a href="http://www.seas.virginia.edu/acad/programs/tlp/" target="_blank">Technology Leaders Program</a> has enabled me to develop design thinking
+	 practices in a multidisciplinary context not commonly seen in engineering degree curricula.
+</p>
+</div>
+
+
+<!-- PROJECTS -->
+<div id="projects">
+<p style="font-size: 26px">PROJECTS</p>
+
+<p style="font-size: 18px">All projects + details: <a href="http://github.com/stevenwoodrum?tab=repositories">Click here</a></p>
+
+<p style="font-size: 18px">Current projects (Fall 2015):</p>
+<ul>
+	<li>Bi-copter</li>
+	<li>Music visualizer</li>
+</ul>
+
+<p style="font-size: 18px">Featured:</p>
+
+<div class="card">
+	<a href="http://github.com/stevenwoodrum/Automated_Delivery_Robot">
+	<img src="line-following-robot.jpeg">
+	<p>AUTOMATED DELIVERY ROBOT</p>
+	</a>
+</div>
+
+<div class="card">
+	<a href="http://github.com/stevenwoodrum/Humanoid_Endoskeleton_Research">
+	<img src="hros1-from-trossen.jpg" title="Source: Trossen Robotics (http://www.trossenrobotics.com/HR-OS1)">
+	<p>HUMANOID ENDOSKELETON RESEARCH</p>
+	</a>
+</div>
+
+</div>
+
+
+<!-- CONTACT -->
+<div id="contact">
+<p style="font-size: 26px">CONTACT</p>
+<p style="font-size: 18px">Actively seeking opportunities for summer 2016.  Resume available on request.<br>
+Email me, or continue to stalk me at the following locations:</p>
+
+<div style="width: 100%; text-align: center">
+
+<div class="img">
+	<SCRIPT type='text/javascript'>a='sdw7ng'; b='virginia.edu'
+		document.write('<A hre'+'f="mai'+'lto:'+a+'@'+b+'">');
+		document.write('<img src="mail-icon-iconmonstr-no-attr.png">'+'<div class="desc">'+a+'@'+b+'</div>'+'</a>');
+	</SCRIPT>
+</div>
+
+
+<div class="img">
+	<a href="http://www.linkedin.com/in/stevenwoodrum" target="_blank">
+	<img src="In-Black-128px-TM.png">
+	<div class="desc">LinkedIn</div>
+	</a>
+</div>
+
+<div class="img">
+	<a href="http://github.com/stevenwoodrum">
+	<img src="GitHub-Mark-120px-plus.png">
+	<div class="desc">GitHub</div>
+	</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
