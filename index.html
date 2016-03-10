@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -26,11 +26,11 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
 <div id="header" class="container">
     <div class="row">
         <div class="col-md-4 col-md-push-5">
-            <img src="Me.jpg" class="img-responsive center-block">
+            <img src="Me.jpg" alt="Me" class="img-responsive center-block">
         </div>
         <div class="col-md-4 col-md-pull-3">
             <h1>Steven Woodrum</h1>
-            <p>Computer Engineer | Roboticist</p>
+            <p>Computer Engineer | Roboticist | Designer</p>
         </div>
     </div>
 </div>
@@ -38,9 +38,8 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
 
 <div id="about" class="container">
     <div class="row">
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-            quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-            modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+        <p>
+	</p>
     </div>
 </div>
 
@@ -50,25 +49,37 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
     <div class="row">
         <h2>Projects</h2>
     </div>
-    <div class="row" >
-        <div class="col-md-6">
-            <a href="#myModal" onclick="loadItem(0);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail"></a>
-        </div>
-        <div class="col-md-6">
-            <a href="#myModal" onclick="loadItem(1);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail"></a>
-        </div>
-        <div class="col-md-6">
-            <img src="http://placehold.it/800x400" class="img-responsive thumbnail">
-        </div>
-        <div class="col-md-6">
-            <img src="http://placehold.it/800x400" class="img-responsive thumbnail">
-        </div>
-        <div class="col-md-6">
-            <img src="http://placehold.it/800x400" class="img-responsive thumbnail">
-        </div>
-        <div class="col-md-6">
-            <img src="http://placehold.it/800x400" class="img-responsive thumbnail">
-        </div>
+    <div class="row">
+	<div class="shell">
+            <a href="#myModal" onclick="loadItem(0);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail">
+	    <p class="overlay">Combat Robotics</p>
+	    </a>
+	</div>
+	<div class="shell">
+            <a href="#myModal" onclick="loadItem(1);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail">
+		<p class="overlay">2-DOF Bicopter</p>
+	    </a>
+	</div>
+	<div class="shell">
+            <a href="#myModal" onclick="loadItem(2);" data-toggle="modal"><img src="images/TTR-State-diagram.jpg" class="img-responsive thumbnail">
+		<p class="overlay">Artificially Intelligent Board Game Player</p>
+	    </a>
+	</div>
+	<div class="shell">
+            <a href="#myModal" onclick="loadItem(3);" data-toggle="modal"><img src="images/line-following-robot.jpeg" class="img-responsive thumbnail">
+		<p class="overlay">Automated Delivery Robot</p>
+	    </a>
+	</div>
+	<div class="shell">
+            <a href="#myModal" onclick="loadItem(4);" data-toggle="modal"><img src="images/HR-OS1_Trossen.jpg" class="img-responsive thumbnail">
+		<p class="overlay">Humanoid Endoskeleton Research</p>
+	    </a>
+	</div>
+	<div class="shell">
+            <a href="#myModal" onclick="loadItem(5);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail">
+		<p class="overlay">Music Visualizer PCB</p>
+	    </a>
+	</div>
     </div>
 </div>
 
@@ -82,6 +93,7 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
             <div class="modal-body">
 
                 <div class="container" style="width:100%">
+		<!--
                     <div id="myCarousel" class="carousel slide">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class=""></li>
@@ -114,11 +126,15 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
                         <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
                         <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
                     </div>
+		-->
                 </div>
+
 
                 <p id="date"></p>
 		<p id="skills"></p>
 		<p id="description"></p>
+
+
             </div>
             <div class="modal-footer">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -159,8 +175,6 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
         </div>
     </div>
 </div>
-
-<p id="demo">Not changed by xml.</p>
 
 </body>
 </html>
