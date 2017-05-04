@@ -23,157 +23,178 @@ integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7
 
 <body>
 
-<div id="header" class="container">
+<div id="header" style="background-image:url('binary-TEMPORARY.jpg'); background-attachment: fixed">
+<div style="background-color:rgba(255,255,255,0.9); padding: 60px 0px 60px 0px">
     <div class="row">
         <div class="col-md-4 col-md-push-5">
-            <img src="Me.jpg" alt="Me" class="img-responsive center-block">
+            <img src="Me.jpg" alt="Steven Woodrum" class="img-responsive center-block">
         </div>
         <div class="col-md-4 col-md-pull-3">
             <h1>Steven Woodrum</h1>
-            <p>Computer Engineer | Roboticist | Designer</p>
+            <p>Computer Engineer && Roboticist</p>
         </div>
     </div>
 </div>
+</div>
 
+<div id="projects">
+<div style="background-color: rgba(40,40,40,0.9); padding: 10px">
+    <h2 style="color:#ffffff">Projects</h2>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	  </ol>
 
-<div id="about" class="container">
-    <div class="row">
-        <p>
-	</p>
-    </div>
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+		<div class="item active">
+		  <img src="images/combat-robot.png" alt="combat robotics project page">
+		  <div class="carousel-caption">
+			<h3>Combat Robotics</h3>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="" alt="weather uav project page">
+		  <div class="carousel-caption">
+			<h3>Weather UAV</h3>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="projects/images/smart_holster/on_table.PNG" alt="smart holster project page">
+		  <div class="carousel-caption">
+			<h3>Smart Holster</h3>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="images/line-following-robot.jpeg" alt="automated delivery robot project page">
+		  <div class="carousel-caption">
+			<h3>Automated Delivery Robot</h3>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
+	
+	<div id="gallery" class="row">
+		<div class="col-xs-6 col-md-3">
+			<a href = "projects/combat_robotics.html" class="thumbnail">
+				<img src="images/combat-robot.png" alt="combat robotics project page">
+				<div class="caption">
+					<h4>Combat Robotics</h4>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<a href = "projects/weather_uav.html" class="thumbnail">
+				<img src="" alt="weather uav project page">
+				<div class="caption">
+					<h4>Weather UAV</h4>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<a href = "projects/smart_holster.html" class="thumbnail">
+				<img src="projects/images/smart_holster/on_table.PNG"" alt="smart holster project page">
+				<div class="caption">
+					<h4>Smart Holster</h4>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<a href = "projects/delivery_robot.html" class="thumbnail">
+				<img src="images/line-following-robot.jpeg" alt="automated delivery robot project page">
+				<div class="caption">
+					<h4>Automated Delivery Robot</h4>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
 </div>
 
 
-<div id="projects" class="container">
-    <!-- Row-major layout, preserves order on mobile devices -->
-    <div class="row">
-        <h2>Projects</h2>
-    </div>
-    <div class="row">
-	<div class="shell">
-            <a href="#myModal" onclick="loadItem(0);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail">
-	    <p class="overlay">Combat Robotics</p>
-	    </a>
-	</div>
-	<div class="shell">
-            <a href="#myModal" onclick="loadItem(1);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail">
-		<p class="overlay">2-DOF Bicopter</p>
-	    </a>
-	</div>
-	<div class="shell">
-            <a href="#myModal" onclick="loadItem(2);" data-toggle="modal"><img src="images/TTR-State-diagram.jpg" class="img-responsive thumbnail">
-		<p class="overlay">Artificially Intelligent Board Game Player</p>
-	    </a>
-	</div>
-	<div class="shell">
-            <a href="#myModal" onclick="loadItem(3);" data-toggle="modal"><img src="images/line-following-robot.jpeg" class="img-responsive thumbnail">
-		<p class="overlay">Automated Delivery Robot</p>
-	    </a>
-	</div>
-	<div class="shell">
-            <a href="#myModal" onclick="loadItem(4);" data-toggle="modal"><img src="images/HR-OS1_Trossen.jpg" class="img-responsive thumbnail">
-		<p class="overlay">Humanoid Endoskeleton Research</p>
-	    </a>
-	</div>
-	<div class="shell">
-            <a href="#myModal" onclick="loadItem(5);" data-toggle="modal"><img src="http://placehold.it/800x400" class="img-responsive thumbnail">
-		<p class="overlay">Music Visualizer PCB</p>
-	    </a>
-	</div>
-    </div>
+<div id="about">
+<div style="background-color: rgba(255,255,255,0.9); padding: 10px">
+	<h2>About Me</h2>
+	<p>A little about me and what I've done. Talk about thesis. Talk about capstone.
+	Talk about hobbies. Talk about perspective? Volunteer work?</p>
+</div>
 </div>
 
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Project title</h3>
-            </div>
-            <div class="modal-body">
-
-                <div class="container" style="width:100%">
-		<!--
-                    <div id="myCarousel" class="carousel slide">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item">
-                                <img src="http://placehold.it/2800x1200" alt="">
-                                <div class="carousel-caption">
-                                    <h4>First Thumbnail label</h4>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                </div>
-                            </div>
-                            <div class="item active">
-                                <img src="http://placehold.it/2800x1200/999/EEE" alt="">
-                                <div class="carousel-caption">
-                                    <h4>Second Thumbnail label</h4>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="http://placehold.it/2800x1200/777/FFF" alt="">
-                                <div class="carousel-caption">
-                                    <h4>Third Thumbnail label</h4>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-                    </div>
-		-->
-                </div>
-
-
-                <p id="date"></p>
-		<p id="skills"></p>
-		<p id="description"></p>
-
-
-            </div>
-            <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-            </div>
-        </div>
-    </div>
+<div id="otherprojects">
+<div style="background-color: rgba(255,255,255,0.9); padding: 10px">
+	<h2>Other Projects</h2>
+	<p>The less exciting and/or more generic ones. Brief.</p>
+</div>
 </div>
 
-<div id="otherActivities" class="container">
+
+<div id="courses">
+<div style="background-color: rgba(255,255,255,0.9); padding: 10px">
+	<h2>Courses of Interest</h2>
 	<div class="row">
-		<h2>Other Experience</h2>
+		<div class="col-lg-4">
+			<h3>B.S. Computer Engineering</h3>
+			<ul>
+				<li>Intro to Embedded Computing Systems (ECE 3430)</li>
+				<li>Electrical & Computer Engineering Fundamentals I,II,III (ECE 2630, 2660, 3750)</li>
+				<li>Program & Data Representation (CS 2150)</li>
+				<li>Algorithms (CS 4102)</li>
+				<li>Artificial Intelligence (CS 4710)</li>
+				<li>Electromagnetic Fields (ECE 3209)</li>
+			</ul>
+		</div>
+		<div class="col-lg-4">
+			<h3>Design Integration Minor</h3>
+			<ul>
+				<li>Integrated Systems Design (SYS 3048)</li>
+				<li>Mechatronics (MAE 4710)</li>
+				<li>Intro to Electromechanical Systems (SYS 2048)</li>
+				<li>Systems Engineering Concepts (SYS 2001)</li>
+			</ul>
+		</div>
+		<div class="col-lg-4">
+			<h3>Other</h3>
+			<ul>
+				<li>Dataflow Programming for Machine Vision (ECE 4550)</li>
+				<li>Human Robot Interaction (ENGR 3502)</li>
+				<li>Open Source Humanoid Robots (ENGR 3502)</li>
+				<li>Global Entrepreneurship (STS 2500)</li>
+			</ul>
+		</div>
 	</div>
 </div>
-
-<div id="courses" class="container">
-	<div class="row">
-		<h2>Courses</h2>
-	</div>
-	<div class="row">
-		<ul>
-			<li>adsf</li>
-			<li>fads</li>
-		</ul>
-	</div>
 </div>
 
-<div id="contact" class="container well">
-    <div class="row">
-        <h2>Contact/More Info</h2>
-        <p>Actively seeking opportunities for summer 2016. Resume available on request.</p>
+<div id="contact" style="background-image:url('binary-TEMPORARY.jpg'); background-attachment: fixed">
+<div style="background-color: rgba(255,255,255,0.9); padding: 10px 10px 15px 10px"> 
+	<div style="text-align: center">
+        <p>Resume available on request.</p>
     </div>
-    <div class="row">
-        <div class="col-xs-1">
-		<img src="http://placehold.it/50x50" class="img-responsive" title="Email">
-        </div>
-        <div class="col-xs-1">
-		<img src="http://placehold.it/50x50" class="img-responsive" title="LinkedIn">
-        </div>
+	<div style="text-align: center">
+		<SCRIPT type='text/javascript'>a='sdw7ng'; b='virginia.edu'
+			document.write('<A hre'+'f="mai'+'lto:'+a+'@'+b+'">');
+			document.write('<img src="images/mail-icon-iconmonstr-no-attr.png" style="height: 50px; padding-right: 10px" ');
+			document.write('title="Em'+'ail" alt="Em'+'ail">'+'</a>');
+		</SCRIPT>
+		<a href="http://www.linkedin.com/in/stevenwoodrum">
+			<img src="images/In-Black-128px-TM.png" style="height: 50px; padding-left: 10px" title="LinkedIn" alt="LinkedIn">
+		</a>
     </div>
+</div>
 </div>
 
 </body>
